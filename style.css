@@ -17,7 +17,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 
 html {
@@ -54,6 +53,11 @@ a:hover:after, a.selected:after {
 	position: absolute;
 	top: 40%;
 }
+.markers {
+	border: 14px solid black;
+	border-image: url(img/border.png) 14 repeat;
+	margin-left: -14px!important;
+}
 
 .wrapper {
 	width: 1300px;
@@ -63,17 +67,19 @@ a:hover:after, a.selected:after {
 .sidebar {
 	width: 250px;
 	float: left;
+	margin-top: 10px;
 }
 
 .photo {
 	position: relative;
+	width: 100%;
 }
 
 .highlight {
 	position: absolute;
-	width: 91px;
+	width: 88px;
 	height: 235px;
-	background: rgba(255, 255, 255, .15) url(img/plus_white.png) 3px 5px;
+	background: rgba(255, 255, 255, .15) url(img/plus_white.png) 4px 8px;
 	border: 2px solid white;
 	left: 121px;
 }
@@ -95,7 +101,7 @@ a:hover:after, a.selected:after {
 	background: url("img/logo.png") no-repeat;
 }
 .sidebar .logo {
-	margin: 35px 0;
+	margin: 15px 0 35px;
 }
 
 nav {
@@ -154,6 +160,19 @@ nav a {
 
 footer {
 	clear: both;
+}
+
+footer .column {
+	width: 250px;
+	margin: 0 auto;
+}
+
+.face {
+	background: url("img/face.png") no-repeat;
+	background-position: 50%;
+	width: 100%;
+	height: 180px;
+	margin: 5px 0 35px;
 }
 
 
