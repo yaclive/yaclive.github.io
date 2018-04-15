@@ -1,5 +1,65 @@
+@font-face {
+	font-family: "DIN";
+	src: url("fonts/din-light-webfont.ttf") format("truetype");
+	font-weight: 300;
+}
+@font-face {
+	font-family: "DIN";
+	src: url("fonts/din-regular-webfont.ttf") format("truetype");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "DIN";
+	src: url("fonts/din-medium-webfont.ttf") format("truetype");
+	font-weight: bold;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body {
+	background: #fdfdfd;
+	font-family: "DIN", sans-serif;
+	text-transform: uppercase;
+	color: #171f1f;
+	--swatch: #171f1f;
+	font-size: 10pt;
+}
+
+h1 {
+	font-size: 2.8em;
+}
+h2 {
+	font-weight: 400;
+	font-size: 1.7em;
+}
+
+.wrapper {
+	width: 1300px;
+	margin: 0 auto;
+}
+
+.sidebar {
+	width: 250px;
+	float: left;
+}
+
+.content {
+	width: 1000px;
+	float: right;
+	margin-top: 130px;
+}
+
+.block {
+	width: 485px;
+}
+
+
+
+
+footer {
+	clear: both;
 }
