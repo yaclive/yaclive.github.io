@@ -20,8 +20,12 @@
 	box-sizing: border-box;
 }
 
+html {
+	background: white;
+}
+
 body {
-	background: #fdfdfd;
+	background: white;
 	font-family: "DIN", sans-serif;
 	text-transform: uppercase;
 	color: #171f1f;
@@ -36,6 +40,20 @@ h2 {
 	font-weight: 400;
 	font-size: 1.7em;
 }
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover:after, a.selected:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: black;
+	background: var(--swatch);
+	position: absolute;
+	top: 40%;
+}
 
 .wrapper {
 	width: 1300px;
@@ -47,6 +65,51 @@ h2 {
 	float: left;
 }
 
+.photo {
+	position: relative;
+}
+
+.highlight {
+	position: absolute;
+	width: 91px;
+	height: 235px;
+	background: rgba(255, 255, 255, .15) url(img/plus_white.png) 3px 5px;
+	border: 2px solid white;
+	left: 121px;
+}
+
+.clouds {
+	position: absolute;
+	width: 300px;
+	height: 320px;
+	background: url("img/clouds.jpg");
+	background-position-y: -72px;
+	mix-blend-mode: hard-light;
+	animation: clouds 50s linear infinite;
+	right: -2px;
+}
+
+.logo {
+	width: 250px;
+	height: 68px;
+	background: url("img/logo.png") no-repeat;
+}
+.sidebar .logo {
+	margin: 35px 0;
+}
+
+nav {
+	font-size: 1.1rem;
+	font-weight: bold;
+	white-space: nowrap;
+}
+nav a {
+	margin-right: 12px;
+	display: inline-block;
+	position: relative;
+}
+
+
 .content {
 	width: 1000px;
 	float: right;
@@ -55,11 +118,58 @@ h2 {
 
 .block {
 	width: 485px;
+	margin-bottom: 50px;
+}
+.block:nth-child(even) {
+	margin-left: 515px;
 }
 
+.block header {
+	margin-bottom: 20px;
+}
+.block header h1:after {
+	content: "";
+	display: inline-block;
+	width: .5em;
+	height: .8em;
+	background: black;
+	background: var(--swatch);
+	position: absolute;
+	margin: 2px 0 0 10px;
+	//animation: cursor cubic-bezier(0.75, 0, 0.35, 1) 1.2s infinite;
+}
+.block header h2 {
+	margin-top: -5px;
+}
+
+.block .banner {
+	margin-bottom: 40px;
+}
+.block#about .banner {
+	background: url("img/banner_about.png") no-repeat;
+	height: 204px;
+}
 
 
 
 footer {
 	clear: both;
+}
+
+
+@keyframes clouds {
+	0% {
+		background-position-x: 0px; 
+	}
+	100% {
+		background-position-x: -1550px;
+	}
+}
+@keyframes cursor {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
 }
