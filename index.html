@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>CLIVE COOPER PORTFOLIO</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -40,12 +41,38 @@
 					<h1>photography</h1>
 					<h2>personal projects</h2>
 				</header>
+				<div class="gallery">
+					<a data-fancybox="gallery" href="photos/IMG_0092.jpg"><div class="image" src="IMG_0092.jpg"><img src="photos/IMG_0092.jpg"></div></a>
+					<a data-fancybox="gallery" href="photos/IMG_0093.jpg"><div class="image" src="IMG_0093.jpg"><img src="photos/IMG_0093.jpg"></div></a>
+					<a data-fancybox="gallery" href="photos/IMG_0102.jpg"><div class="image" src="IMG_0102.jpg"><img src="photos/IMG_0102.jpg"></div></a>
+
+					<a data-fancybox="gallery" href="photos/IMG_0089.jpg"><div class="image" src="IMG_0089.jpg"><img src="photos/IMG_0089.jpg"></div></a>
+					<a data-fancybox="gallery" href="photos/IMG_0088.jpg"><div class="image" src="IMG_0088.jpg"><img src="photos/IMG_0088.jpg"></div></a>
+					<a data-fancybox="gallery" href="photos/IMG_0110.jpg"><div class="image" src="IMG_0110.jpg"><img src="photos/IMG_0110.jpg"></div></a>
+
+					<a data-fancybox="gallery" href="photos/IMG_0090_3.jpg"><div class="image" src="IMG_0090_3.jpg"><img src="photos/IMG_0090_3_thumb.jpg"></div></a>
+					<a data-fancybox="gallery" href="photos/IMG_0021.jpg"><div class="image" src="IMG_0021.jpg"><img src="photos/IMG_0021_thumb.jpg"></div></a>
+					<a data-fancybox="gallery" href="photos/IMG_0021_4.jpg"><div class="image" src="IMG_0021_4.jpg"><img src="photos/IMG_0021_4_thumb.jpg"></div></a>
+					
+					<a data-fancybox="gallery" href="photos/IMG_0098_2.jpg"><div class="image" src="IMG_0098_2.jpg"><img src="photos/IMG_0098_2.jpg"></div></a>
+					<a data-fancybox="gallery" href="photos/BLK_035.jpg"><div class="image" src="BLK_035.jpg"><img src="photos/BLK_035.jpg"></div></a>
+					<a data-fancybox="gallery" href="photos/BLK_042.jpg"><div class="image" src="BLK_042.jpg"><img src="photos/BLK_042.jpg"></div></a>
+				</div>
 			</div>
 			<div class="block" id="web">
 				<header>
 					<h1>web</h1>
 					<h2>personal projects</h2>
 				</header>
+				<div class="gallery">
+					<a data-fancybox="gallery" href="photos/IMG_0092.jpg"><div class="image" src="IMG_0092.jpg"><img src="photos/IMG_0092.jpg"></div></a>
+					<a data-fancybox="gallery" href="photos/IMG_0093.jpg"><div class="image" src="IMG_0093.jpg"><img src="photos/IMG_0093.jpg"></div></a>
+					<a data-fancybox="gallery" href="photos/IMG_0102.jpg"><div class="image" src="IMG_0102.jpg"><img src="photos/IMG_0102.jpg"></div></a>
+
+					<a data-fancybox="gallery" href="photos/IMG_0089.jpg"><div class="image" src="IMG_0089.jpg"><img src="photos/IMG_0089.jpg"></div></a>
+					<a data-fancybox="gallery" href="photos/IMG_0088.jpg"><div class="image" src="IMG_0088.jpg"><img src="photos/IMG_0088.jpg"></div></a>
+					<a data-fancybox="gallery" href="photos/IMG_0110.jpg"><div class="image" src="IMG_0110.jpg"><img src="photos/IMG_0110.jpg"></div></a>
+				</div>
 			</div>
 			<div class="barcode bar3"></div>
 		</div>
@@ -64,7 +91,33 @@
 				</p>
 			</div>
 			<hr>
+			<p>Portfolio and contents are copyright &copy; 2018 <strong>Clive Cooper</strong></p>
 		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+		<script type="text/javascript">
+
+			// Something small to make the sidebar stick
+			$(window).on("load scroll resize", function(e) {
+				var sidebarHeight = $(".sidebar").height(),
+					offset = $(this).scrollTop() + sidebarHeight, // The current bottom pixel of the sidebar
+					top = $("footer").offset().top; // Pixels where the footer begins
+
+				if ($(this).outerWidth() > 850) { // Disables effect if viewport is too small
+					if (offset < top) {
+						$(".sidebar").css({"position":"fixed", "transform":"none"});
+					}
+					else {
+						$(".sidebar").css({"position":"relative", "transform":"translateY("+ (top - sidebarHeight) +"px)"}); // Translate ensures sidebar stays at the bottom of the page
+					}
+				}
+				else {
+					$(".sidebar").removeAttr("style"); // Restores css to default
+				}
+				
+			});
+		</script>
 	</div>
 </body>
 </html>
