@@ -1,9 +1,91 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
 	background: #000;
 	color: #FFF;
+	font-family: "Bahnschrift", sans-serif;
+}
+
+a {
+	color: inherit;
+}
+
+button {
+	color: inherit;
+	font-family: inherit;
+}
+button:hover {
+	cursor: pointer;
+}
+.callToActionButton {
+	display: block;
+	margin: 0 auto;
+	background: none;
+	text-transform: uppercase;
+	font-size: 13pt;
+	border: 2px solid white;
+	border-radius: 50%;
+	width: 86px;
+	height: 86px;
+}
+.callToActionButton:hover {
+	background: white;
+	color: black;
+}
+.callToActionButton a {
+	display: block;
+	height: 100%;
+	line-height: 84px;
+	text-decoration: none;
+}
+
+.wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.page {
+	min-height: 100vh;
+	padding-top: 90px;
+}
+
+header {
+	text-transform: uppercase;
+	position: relative;
+	margin: 0 5%;
+}
+
+h1 {
+	font-size: 22pt;
+    font-weight: 400;
+}
+
+h2 {
+	font-size: 13pt;
+	font-weight: 400;
+	margin-top: -5px;
+}
+
+nav {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 13pt;
+}
+nav a {
+	margin-left: 12px;
+}
+
+footer {
+	text-transform: uppercase;
+	font-size: 13pt;
+	margin: 0 5%;
 }
