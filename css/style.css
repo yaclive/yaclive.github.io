@@ -25,30 +25,13 @@ button {
 button:hover {
 	cursor: pointer;
 }
-.callToActionButton {
-	display: block;
-	margin: 0 auto;
-	background: none;
-	text-transform: uppercase;
-	font-size: 13pt;
-	border: 2px solid white;
-	border-radius: 50%;
-	width: 86px;
-	height: 86px;
-}
-.callToActionButton:hover {
-	background: white;
-	color: black;
-}
-.callToActionButton a {
-	display: block;
-	height: 100%;
-	line-height: 84px;
-	text-decoration: none;
+
+video {
+	width: 100%;
 }
 
 .wrapper {
-	max-width: 900px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
@@ -60,7 +43,7 @@ button:hover {
 header {
 	text-transform: uppercase;
 	position: relative;
-	margin: 0 5%;
+	margin: 0 8% 20px 8%;
 }
 
 h1 {
@@ -87,5 +70,27 @@ nav a {
 footer {
 	text-transform: uppercase;
 	font-size: 13pt;
-	margin: 0 5%;
+	margin: 6px 8% 0 8%;
+}
+
+.callToActionButton {
+	display: block;
+	margin: 0 auto;
+	background: none;
+	text-transform: uppercase;
+	font-size: 13pt;
+	border: 2px solid white;
+	border-radius: 50%;
+	width: 86px;
+	height: 86px;
+}
+.callToActionButton:hover {
+	background: white;
+	color: black;
+}
+.callToActionButton a {
+	display: block;
+	height: 100%;
+	line-height: 84px;
+	text-decoration: none;
 }
