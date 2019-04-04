@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Clive Cooper</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,14 +15,13 @@
 				<nav>
 					<a href="#about">about me</a>
 					<a href="#blog">blog</a>
+					<a href="#contact">contact</a>
 				</nav>
 			</header>
-			<div class="content">
-				<video loop autoplay muted>
-					<source src="video/reel.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</div>
+			<video loop autoplay muted>
+				<source src="video/reel.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
 			<footer>wellington, new zealand</footer>
 			<button class="callToActionButton"><a href="#contact">contact</a></button>
 		</div>
@@ -31,6 +31,62 @@
 			</header>
 			<div class="content">abc xyz hello lorem ipsum</div>
 		</div>
+		<div class="page" id="blog">
+			<header>
+				<h1>blog</h1>
+			</header>
+			<div class="content">
+				<div class="blogEntry">
+					<h2>blog entry 1</h2>
+					<div class="entryBody">
+						<div class="entryText"></div>
+						<button class="readMoreButton">read more</button>
+					</div>
+				</div>
+				<div class="blogEntry">
+					<h2>blog entry 2</h2>
+					<div class="entryBody">
+						<div class="entryText"></div>
+						<button class="readMoreButton">read more</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page" id="contact">
+			<header>
+				<h1>contact</h1>
+				<h2>want to get in touch?</h2>
+			</header>
+			<div class="content">
+				EMAIL: scaclive@gmail.com <br/>
+				PHONE: +64 204 000 9936 <br/><br/>
+				<div class="form">
+					<input type="text" name="name" placeholder="name" required>
+					<input type="email" name="email" placeholder="email" required>
+					<input type="tel" name="phone" placeholder="phone">
+					<textarea name="message" placeholder="message" required></textarea>
+					<button class="callToActionButton">send</button>
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<script>
+		var buttons = document.getElementsByClassName("readMoreButton");
+
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].addEventListener("click", function(event) {
+				event.target.parentNode.parentNode.classList.toggle("entryFull");
+				event.target.parentNode.parentNode.parentNode.classList.toggle("entryOpen");
+				if (event.target.innerHTML == "read more") {
+					event.target.innerHTML = "close";
+				}
+				else if (event.target.innerHTML == "close") {
+					event.target.innerHTML = "read more";
+				}
+				
+			});
+		}
+	</script>
 </body>
 </html>
