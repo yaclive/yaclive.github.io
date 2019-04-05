@@ -46,6 +46,10 @@ video {
 	padding-top: 60px;
 	border-bottom: 2px solid white;
 }
+.pageHighlight {
+	background: white;
+	color: black;
+}
 
 header {
 	text-transform: uppercase;
