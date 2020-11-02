@@ -292,6 +292,7 @@ footer {
 	margin-bottom: 60px;
 }
 .footerBreak .ribbon {
+	height: 18px;
 	font-size: 1.3em;
 	background: black;
 	background: var(--swatch);
@@ -386,7 +387,7 @@ footer hr {
 
 @keyframes clouds {
 	0% {
-		background-position-x: 0px; 
+		background-position-x: 0px;
 	}
 	100% {
 		background-position-x: -1550px;

@@ -33,67 +33,53 @@
 				</header>
 				<div class="banner"></div>
 				<p>
-					Clive Cooper is an 18-year-old male living in Wellington, New Zealand. He currently studies CMP (Creative Media Production) at Massey University as a first-year student. Passions include an assortment of creative facets. Clive enjoys: listening to music, visual and web design, illustration, photography and the gym. 
+					Clive Cooper is a <span class="age"></span> year-old male living in Wellington, New Zealand. Clive graduated from Massey University in 2021 with a Bachelor of Creative Media Production (specialisation in Web Dev) and a Minor in Music Technology. He is passionate about Interactive Design and has been working on Web projects for more than 10 years. Along the way, Clive has picked up an interest in Music Production and has been learning and honing the craft in his spare time, releasing two albums on Bandcamp. Recently, Clive worked with a group of talented individuals to develop the 2d puzzle game, Neocense.
 				</p>
 			</div>
 			<div class="block" id="photography">
 				<header>
-					<h1>photography</h1>
-					<h2>school project</h2>
+					<h1>web</h1>
+					<h2>various projects</h2>
 				</header>
 				<div class="gallery">
-					<a data-fancybox="gallery_photos" href="photos/IMG_0092.jpg"><div class="image" src="IMG_0092.jpg"><img src="photos/IMG_0092.jpg"></div></a>
-					<a data-fancybox="gallery_photos" href="photos/IMG_0093.jpg"><div class="image" src="IMG_0093.jpg"><img src="photos/IMG_0093.jpg"></div></a>
-					<a data-fancybox="gallery_photos" href="photos/IMG_0102.jpg"><div class="image" src="IMG_0102.jpg"><img src="photos/IMG_0102.jpg"></div></a>
 
-					<a data-fancybox="gallery_photos" href="photos/IMG_0089.jpg"><div class="image" src="IMG_0089.jpg"><img src="photos/IMG_0089.jpg"></div></a>
-					<a data-fancybox="gallery_photos" href="photos/IMG_0088.jpg"><div class="image" src="IMG_0088.jpg"><img src="photos/IMG_0088.jpg"></div></a>
-					<a data-fancybox="gallery_photos" href="photos/IMG_0110.jpg"><div class="image" src="IMG_0110.jpg"><img src="photos/IMG_0110.jpg"></div></a>
-
-					<a data-fancybox="gallery_photos" href="photos/IMG_0090_3.jpg"><div class="image" src="IMG_0090_3.jpg"><img src="photos/IMG_0090_3_thumb.jpg"></div></a>
-					<a data-fancybox="gallery_photos" href="photos/IMG_0021.jpg"><div class="image" src="IMG_0021.jpg"><img src="photos/IMG_0021_thumb.jpg"></div></a>
-					<a data-fancybox="gallery_photos" href="photos/IMG_0021_4.jpg"><div class="image" src="IMG_0021_4.jpg"><img src="photos/IMG_0021_4_thumb.jpg"></div></a>
-					
-					<a data-fancybox="gallery_photos" href="photos/IMG_0098_2.jpg"><div class="image" src="IMG_0098_2.jpg"><img src="photos/IMG_0098_2.jpg"></div></a>
-					<a data-fancybox="gallery_photos" href="photos/BLK_035.jpg"><div class="image" src="BLK_035.jpg"><img src="photos/BLK_035.jpg"></div></a>
-					<a data-fancybox="gallery_photos" href="photos/BLK_042.jpg"><div class="image" src="BLK_042.jpg"><img src="photos/BLK_042.jpg"></div></a>
 				</div>
 			</div>
 			<div class="block" id="web">
 				<header>
-					<h1>web</h1>
-					<h2>finished projects</h2>
+					<h1>music</h1>
+					<h2>published work</h2>
 				</header>
-				<div class="gallery">
-					<a data-fancybox="gallery_web" href="photos/tribe_game.jpg"><div class="image" src="tribe_game"><img src="photos/tribe_game_thumb.jpg"></div></a>
-					<a data-fancybox="gallery_web" href="photos/road_rage.jpg"><div class="image" src="road_rage"><img src="photos/road_rage_thumb.jpg"></div></a>
-					<a data-fancybox="gallery_web" href="photos/helpr.jpg"><div class="image" src="helpr"><img src="photos/helpr_thumb.jpg"></div></a>
-					<a data-fancybox="gallery_web" href="photos/GOL.jpg"><div class="image" src="game_of_life"><img src="photos/GOL_thumb.jpg"></div></a>
-				</div>
+				<iframe style="border: 0; width: 350px; height: 654px;" src="https://bandcamp.com/EmbeddedPlayer/album=3520468708/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://clivecooper.bandcamp.com/album/boombastic">Boombastic! by Clive Cooper</a></iframe>
 			</div>
 			<div class="barcode bar3"></div>
 		</div>
 		<footer>
 			<div class="footerBreak">
-				<div class="ribbon">clive cooper 2018    clive cooper 2018    clive cooper 2018    clive cooper 2018    clive cooper 2018    clive cooper 2018    clive cooper 2018    clive cooper 2018</div>
-				<div class="ribbon">clive cooper 2018    clive cooper 2018    clive cooper 2018    clive cooper 2018    clive cooper 2018    clive cooper 2018    clive cooper 2018    clive cooper 2018</div>
+				<div class="ribbon"></div>
+				<div class="ribbon"></div>
 			</div>
 			<div class="column">
 				<div class="logo markers">clive cooper</div>
 				<div class="face markers"></div>
 				<p class="info">
-					+64 204 000 9936<br /> 
-					yaclive@gmail.com<br />
+					+64 204 000 9936<br />
+					scaclive@gmail.com<br />
 					clive cooper
 				</p>
 			</div>
 			<hr>
-			<p>Portfolio and contents are copyright &copy; 2018 <strong>Clive Cooper</strong></p>
+			<p>Portfolio and contents are copyright &copy; <span class="year"></span> <strong>Clive Cooper</strong></p>
 		</footer>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 		<script type="text/javascript">
+			var d = new Date();
+
+			$(".year").html(d.getFullYear());
+
+			$(".age").html(d.getFullYear() - 1999);
 
 			// Something small to make the sidebar stick
 			$(window).on("load scroll resize", function(e) {
@@ -112,7 +98,7 @@
 				else {
 					$(".sidebar").removeAttr("style"); // Restores css to default
 				}
-				
+
 			});
 		</script>
 	</div>
