@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>CLIVE COOPER PORTFOLIO</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -19,8 +19,8 @@
 			<div class="logo markers">clive cooper</div>
 			<nav>
 				<a href="#about">about</a>
-				<a href="#photography">photography</a>
-				<a href="#web">web</a>
+				<a href="#photography">projects</a>
+				<a href="#web">music</a>
 			</nav>
 			<div class="barcode bar1"></div>
 			<div class="barcode bar2"></div>
@@ -33,16 +33,54 @@
 				</header>
 				<div class="banner"></div>
 				<p>
-					Clive Cooper is a <span class="age"></span> year-old male living in Wellington, New Zealand. Clive graduated from Massey University in 2021 with a Bachelor of Creative Media Production (specialisation in Web Dev) and a Minor in Music Technology. He is passionate about Interactive Design and has been working on Web projects for more than 10 years. Along the way, Clive has picked up an interest in Music Production and has been learning and honing the craft in his spare time, releasing two albums on Bandcamp. Recently, Clive worked with a group of talented individuals to develop the 2d puzzle game, Neocense.
+					<strong>Clive Cooper</strong> is a <span class="age"></span> year-old male living in <strong>Wellington, New Zealand</strong>. Clive graduated from <strong>Massey University</strong> in 2021 with a <strong>Bachelor of Creative Media Production (specialisation in Web Dev)</strong> and a <strong>Minor in Music Technology</strong>. He is passionate about <strong>Interactive Design</strong> and has been working on web projects for more than 10 years. Along the way, Clive has picked up an interest in <strong>Music Production</strong> and has been learning the craft in his spare time, releasing <strong>two albums on Bandcamp</strong>.
 				</p>
 			</div>
 			<div class="block" id="photography">
 				<header>
-					<h1>web</h1>
-					<h2>various projects</h2>
+					<h1>projects</h1>
+					<h2>mostly web</h2>
 				</header>
 				<div class="gallery">
+					<a data-fancybox="data-vis" href="https://www.youtube.com/watch?v=Rb32mSdfJFY&amp;autoplay=1" data-caption="Creative visualisation for EEG data. &lt;a href='212-data-vis/'&gt;Link to project&lt;/a&gt;">
+						<div class="image" src="212-Data-Vis">
+							<img src="gallery/212-data-vis-thumb.jpg" alt="212 data vis thumbnail">
+						</div>
+					</a>
+					<a data-fancybox="data-vis" href="gallery/212-data-vis-dev1.png" data-caption="Arrangement 1"></a>
+					<a data-fancybox="data-vis" href="gallery/212-data-vis-concept-1.png" data-caption="Figma Mockup 1"></a>
+					<a data-fancybox="data-vis" href="gallery/212-data-vis-concept-2.png" data-caption="Figma Mockup 2"></a>
 
+					<a data-fancybox="IS/D-M" href="gallery/ISD-M-Mockup.jpg" data-caption="Mockup designs for the IS/D-M video synthesizer.">
+						<div class="image" src="IS/D-M">
+							<img src="gallery/ISD-M-thumb.jpg" alt="IS/D-M thumbnail">
+						</div>
+					</a>
+					<a data-fancybox="IS/D-M" href="gallery/ISD-M-Mockup-Proto1.jpg" data-caption="Prototype 1 Mockup"></a>
+					<a data-fancybox="IS/D-M" href="gallery/ISD-M-Mockup-Proto2.jpg" data-caption="Prototype 2 Mockup"></a>
+
+					<a data-fancybox="vote-experiment" href="gallery/voting-experiment-main.jpg" data-caption="An experiment where users can only vote once. All actions influence a single outcome.">
+						<div class="image" src="Voting-Experiment">
+							<img src="gallery/voting-experiment-thumb.jpg" alt="voting experiment thumbnail">
+						</div>
+					</a>
+					<a data-fancybox="vote-experiment" href="gallery/voting-experiment-welcome.jpg" data-caption="Voting welcome page"></a>
+					<a data-fancybox="vote-experiment" href="gallery/voting-experiment-special.jpg" data-caption="Special votes"></a>
+					<a data-fancybox="vote-experiment" href="gallery/voting-experiment-mockup.jpg" data-caption="Figma project mockup"></a>
+
+					<a data-fancybox="music-app" href="gallery/music-app.jpg" data-caption="Web app concept for simple and fast musical exploration.">
+						<div class="image" src="Music-App">
+							<img src="gallery/music-app-thumb.jpg" alt="music app thumbnail">
+						</div>
+					</a>
+
+					<a data-fancybox="one-way" href="gallery/one-way-wellington-main.jpg" data-caption="UI Design for the game, One Way Wellington. 2nd year project.">
+						<div class="image" src="one-way-wellington">
+							<img src="gallery/one-way-wellington-thumb2.jpg" alt="One Way Wellington thumbnail">
+						</div>
+					</a>
+					<a data-fancybox="one-way" href="gallery/one-way-wellington-alts.jpg" data-caption="Alternative inventory mockup"></a>
+					<a data-fancybox="one-way" href="gallery/one-way-wellington-paused.jpg" data-caption="Pause menu"></a>
 				</div>
 			</div>
 			<div class="block" id="web">
@@ -50,7 +88,8 @@
 					<h1>music</h1>
 					<h2>published work</h2>
 				</header>
-				<iframe style="border: 0; width: 350px; height: 654px;" src="https://bandcamp.com/EmbeddedPlayer/album=3520468708/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://clivecooper.bandcamp.com/album/boombastic">Boombastic! by Clive Cooper</a></iframe>
+				<iframe style="border: 0; width: 100%; height: 750px;" src="https://bandcamp.com/EmbeddedPlayer/album=3520468708/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://clivecooper.bandcamp.com/album/boombastic">Boombastic! by Clive Cooper</a></iframe>
+				<iframe style="border: 0;  width: 100%; height: 750px;" src="https://bandcamp.com/EmbeddedPlayer/album=2344802617/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://clivecooper.bandcamp.com/album/neocense-ost">Neocense OST by Clive Cooper</a></iframe>
 			</div>
 			<div class="barcode bar3"></div>
 		</div>
@@ -72,8 +111,8 @@
 			<p>Portfolio and contents are copyright &copy; <span class="year"></span> <strong>Clive Cooper</strong></p>
 		</footer>
 
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 		<script type="text/javascript">
 			var d = new Date();
 

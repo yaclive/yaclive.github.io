@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: hidden;
+	font-family: "Abel", sans-serif;
+}
+
+canvas {
+	display: block;
+	cursor: ew-resize;
+}
+
+.ui {
+	position: absolute;
+	max-width: 1200px;
+	width: 100%;
+	max-height: 750px;
+	height: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	cursor: ew-resize;
+
+	border: 10px solid black;
+	border-image: url(../img/border.svg) 9 repeat;
+}
+
+.sidebar {
+	display: table;
+	height: 100%;
+	cursor: default;
+	user-select: none;
+}
+
+.btn {
+	cursor: pointer;
+}
+.btn:hover, .active {
+	box-shadow: inset 0px 0px 0px 2px black, inset 0px 0px 0px 4px white;
+}
+
+h1, h2 {
+	font-weight: normal;
+	text-transform: uppercase;
+	display: inline;
+}
+h1 {
+	font-size: 1.6em;
+	background: black;
+	color: white;
+	padding: 0px 36px 0 10px;
+	margin: 0 0 10px;
+}
+h2 {
+	font-size: 1em;
+	background: white;
+	padding-right: 20px;
+}
+
+.controls {
+	margin: 46px 0 0;
+}
+
+.mode {
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	margin: 0 4px 0 0;
+}
+.mode#mode1 {
+	background: black url("../img/mode1.png") no-repeat 50%;
+}
+.mode#mode2 {
+	background: black url("../img/mode2.png") no-repeat 50%;
+}
+.mode#mode3 {
+	background: black url("../img/mode3.png") no-repeat 50%;
+}
+
+select {
+	font-family: inherit;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+.time {
+	color: white;
+	position: absolute;
+	bottom: 70px;
+}
+.timeElement {
+	display: inline-block;
+	min-width: 30px;
+	height: 30px;
+	background: black;
+	vertical-align: top;
+}
+.timeElement#fastReverse {
+	background: black url("../img/timeFR.png") no-repeat 50%;
+}
+.timeElement#reverse {
+	background: black url("../img/timeR.png") no-repeat 50%;
+}
+.timeElement#pause {
+	background: black url("../img/timeP.png") no-repeat 50%;
+}
+.timeElement#forward {
+	background: black url("../img/timeF.png") no-repeat 50%;
+}
+.timeElement#fastForward {
+	background: black url("../img/timeFF.png") no-repeat 50%;
+}
+.timeElement#display {
+	width: 140px;
+	font-size: 1.2em;
+	line-height: 30px;
+	text-align: center;
+}
+.progress {
+	height: 4px;
+	background: black;
+	margin: 4px 0 0 0;
+}
+
+.loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	padding: 1px 16px;
+}
+
+footer {
+	position: absolute;
+	bottom: 25px;
+}

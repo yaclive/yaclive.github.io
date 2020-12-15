@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>212 Data Vis</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<div class="ui">
+		<div class="sidebar" id="sidebar">
+			<div class="header">
+				<h1>eeg breath counting</h1><br />
+				<h2>10,000 samples</h2><br />
+				<h2>78 signals</h2>
+			</div>
+			<div class="controls">
+				<h2>display mode</h2><br />
+				<div class="modes">
+					<div class="btn mode active" id="mode1"></div>
+					<div class="btn mode" id="mode2"></div>
+					<div class="btn mode" id="mode3"></div>
+				</div>
+				<h2>blend mode</h2><br />
+				<div class="blendmodes">
+					<select name="blendmode" id="selectBlendMode">
+						<option value="overlay">overlay</option>
+						<option value="multiply">multiply</option>
+						<option value="screen">screen</option>
+						<option value="darken">darken</option>
+						<option value="soft-light">soft-light</option>
+					</select>
+				</div>
+				<h2>dataset</h2><br />
+				<div class="datasets">
+					<select name="dataset" id="selectDataset">
+						<option value="eeg_data_a_x1">subject a x1</option>
+						<option value="eeg_data_a_x5">subject a x5</option>
+						<option value="eeg_data_a_x20">subject a x20</option>
+						<option value="eeg_data_b_x1">subject b x1</option>
+						<option value="eeg_data_b_x5">subject b x5</option>
+						<option value="eeg_data_b_x20">subject b x20</option>
+					</select>
+				</div>
+				<div class="time">
+					<div class="btn timeElement" id="fastReverse"></div>
+					<div class="btn timeElement" id="reverse"></div>
+					<div class="timeElement" id="display">00.00</div>
+					<div class="btn timeElement" id="pause"></div>
+					<div class="btn timeElement active" id="forward" style="display: none;"></div>
+					<div class="btn timeElement" id="fastForward"></div>
+					<div class="progress" id="progress"></div>
+				</div>
+			</div>
+		</div>
+		<footer>Grandchamp R, Braboszcz C and Delorme A (2014) Oculometric variations during mind wandering. Front. Psychol. 5:31. doi: 10.3389/fpsyg.2014.00031</footer>
+	</div>
+	<div class="loading" id="loading">loading dataset</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
