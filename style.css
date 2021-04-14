@@ -46,7 +46,7 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
-.wrapper a:hover:after, .wrapper a.selected:after {
+nav a:hover:after, nav a.selected:after {
 	content: "";
 	display: block;
 	width: 100%;
