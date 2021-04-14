@@ -147,6 +147,27 @@ nav a {
 	position: relative;
 }
 
+.cv {
+	width: 55px;
+	margin: 38px auto 0;
+	text-align: center;
+	font-size: 20px;
+	border: 2px solid var(--swatch);
+	border-width: 5px 2px;
+	border-radius: 8px;
+	padding: 16px 3px 11px;
+	font-weight: 600;
+	transition: all .8s cubic-bezier(0, 1, 0, 1);
+	cursor: default;
+}
+.cv strong {
+	font-size: 29px;
+}
+.cv:hover {
+	background: var(--swatch);
+	color: white;
+}
+
 .bar1 {
 	top: 210px;
 	left: -16px;
@@ -259,9 +280,11 @@ nav a {
 	background: url("img/banner_about.png") no-repeat;
 	height: 204px;
 }
-
 .block#about p {
 	font-size: 11pt;
+}
+.block#about strong {
+	font-size: 16px;
 }
 
 .gallery a:after {

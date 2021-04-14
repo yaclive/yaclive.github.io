@@ -22,6 +22,12 @@
 				<a href="#photography">projects</a>
 				<a href="#web">music</a>
 			</nav>
+			<a href="./CV - CLIVE COOPER.pdf">
+				<div class="cv">
+					view<br>
+					<strong>cv</strong>
+				</div>
+			</a>
 			<div class="barcode bar1"></div>
 			<div class="barcode bar2"></div>
 		</div>
@@ -50,6 +56,14 @@
 					<a data-fancybox="data-vis" href="gallery/212-data-vis-dev1.png" data-caption="Arrangement 1"></a>
 					<a data-fancybox="data-vis" href="gallery/212-data-vis-concept-1.png" data-caption="Figma Mockup 1"></a>
 					<a data-fancybox="data-vis" href="gallery/212-data-vis-concept-2.png" data-caption="Figma Mockup 2"></a>
+
+					<a data-fancybox="beautiful-u" href="gallery/beautiful-u-home.jpg" data-caption="Mockup for Beautiful U. Freelance work.">
+						<div class="image" src="beautiful-u">
+							<img src="gallery/beautiful-u-thumb.jpg" alt="beautiful u thumbnail">
+						</div>
+					</a>
+					<a data-fancybox="beautiful-u" href="gallery/beautiful-u-services.jpg" data-caption="Beautiful U services page"></a>
+					<a data-fancybox="beautiful-u" href="gallery/beautiful-u-contact.jpg" data-caption="Beautiful U contact page"></a>
 
 					<a data-fancybox="IS/D-M" href="gallery/ISD-M-Mockup.jpg" data-caption="Mockup designs for the IS/D-M video synthesizer.">
 						<div class="image" src="IS/D-M">
@@ -110,35 +124,35 @@
 			<hr>
 			<p>Portfolio and contents are copyright &copy; <span class="year"></span> <strong>Clive Cooper</strong></p>
 		</footer>
+	</div>
 
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-		<script type="text/javascript">
-			var d = new Date();
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<script type="text/javascript">
+		var d = new Date();
 
-			$(".year").html(d.getFullYear());
+		$(".year").html(d.getFullYear());
 
-			$(".age").html(d.getFullYear() - 1999);
+		$(".age").html(d.getFullYear() - 2000);
 
-			// Something small to make the sidebar stick
-			$(window).on("load scroll resize", function(e) {
-				var sidebarHeight = $(".sidebar").height(),
-					offset = $(this).scrollTop() + sidebarHeight, // The current bottom pixel of the sidebar
-					top = $("footer").offset().top; // Pixels where the footer begins
+		// Something small to make the sidebar stick
+		$(window).on("load scroll resize", function(e) {
+			var sidebarHeight = $(".sidebar").height(),
+				offset = $(this).scrollTop() + sidebarHeight, // The current bottom pixel of the sidebar
+				top = $("footer").offset().top; // Pixels where the footer begins
 
-				if ($(this).outerWidth() > 850) { // Disables effect if viewport is too small
-					if (offset < top) {
-						$(".sidebar").css({"position":"fixed", "transform":"none"});
-					}
-					else {
-						$(".sidebar").css({"position":"relative", "transform":"translateY("+ (top - sidebarHeight) +"px)"}); // Translate ensures sidebar stays at the bottom of the page
-					}
+			if ($(this).outerWidth() > 850) { // Disables effect if viewport is too small
+				if (offset < top) {
+					$(".sidebar").css({"position":"fixed", "transform":"none"});
 				}
 				else {
-					$(".sidebar").removeAttr("style"); // Restores css to default
+					$(".sidebar").css({"position":"relative", "transform":"translateY("+ (top - sidebarHeight) +"px)"}); // Translate ensures sidebar stays at the bottom of the page
 				}
-			});
-		</script>
-	</div>
+			}
+			else {
+				$(".sidebar").removeAttr("style"); // Restores css to default
+			}
+		});
+	</script>
 </body>
 </html>
